@@ -27,9 +27,9 @@ mv composer.phar /usr/local/bin/composer
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
-# Install NVM
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-source $HOME/.nvm/nvm.sh
+# Install Zsh NVM plugin
+git clone https://github.com/lukechilds/zsh-nvm $HOME/.oh-my-zsh/custom/plugins/zsh-nvm
+source $HOME/.oh-my-zsh/custom/plugins/zsh-nvm/zsh-nvm.plugin.zsh
 nvm install node
 
 # Install global NPM packages
