@@ -22,46 +22,54 @@ brew 'bash'
 brew 'grep'
 
 # Install Binaries
-brew 'awscli'
+brew 'android-sdk'
+brew 'ffmpeg'
+brew 'gdal'
 brew 'git'
-brew 'hub'
-brew 'tree'
+brew 'htop-osx'
 brew 'mackup'
 brew 'mas'
 brew 'node'
 brew 'trash'
 brew 'wget'
+brew 'youtube-dl'
 
 # Development
 brew 'php71', args: ['with-debug']
 brew 'php71-intl'
 brew 'mariadb'
+brew 'mongodb'
 
 # Apps
-cask 'aerial'
 cask 'alfred'
-cask 'caffeine'
-cask 'docker'
+cask 'anki'
+cask 'carbon-copy-cloner'
+cask 'colorsnapper'
+cask 'dash'
 cask 'dropbox'
 cask 'firefox'
-cask 'google-backup-and-sync'
 cask 'google-chrome'
 cask 'gpgtools'
+cask 'imagealpha'
+cask 'imageoptim'
 cask 'iterm2'
-cask 'mysqlworkbench'
-cask 'phpstorm'
-cask 'quip'
+cask 'postman'
 cask 'sequel-pro'
-cask 'shuttle'
+cask 'sketch'
+cask 'skype'
 cask 'slack'
+cask 'sourcetree'
 cask 'sublime-text'
 cask 'torbrowser'
-cask 'tower'
+cask 'transmission'
 cask 'transmit'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
 cask 'vlc'
+
+# Old app versions (https://www.jverdeyen.be/mac/downgrade-brew-cask-application)
+cask 'https://github.com/caskroom/homebrew-cask/raw/3524361d2174fb76a99c1e2522139a5d3cd953de/Casks/phpstorm.rb' # version 2016.1.2
 
 # Quicklook
 cask 'qlcolorcode'
@@ -71,18 +79,18 @@ cask 'quicklook-csv'
 cask 'qlstephen'
 
 # Fonts
-cask 'font-sauce-code-powerline'
+cask 'font-open-sans'
 cask 'font-source-code-pro'
 cask 'font-source-sans-pro'
 cask 'font-source-serif-pro'
 
 # Install Mac App Store apps
 mas '1Password', id: 443987910
-mas 'Byword', id: 420212497
-mas 'Deckset', id: 847496013
-mas 'Gapplin', id: 768053424
-mas 'Giphy Capture', id: 668208984
-mas 'Paw', id: 584653203
-mas 'Sip', id: 507257563
-mas 'Sketch', id: 402476602
-mas 'Tweetbot', id: 557168941
+mas 'DaisyDisk', id: 411643860
+mas 'GIPHY CAPTURE', id: 668208984
+mas 'Magnet', id: 441258766
+mas 'SnippetsLab', id: 1006087419
+mas 'The Unarchiver', id: 425424353
+mas 'Things3', id: 904280696
+mas 'Transmit', id: 403388562
+mas 'Tyme2', id: 1063996724
