@@ -22,17 +22,18 @@ curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 
 # Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/lumen-installer laravel/valet tightenco/jigsaw spatie/http-status-check bramus/mixed-content-scan laravel/spark-installer
+/usr/local/bin/composer global require laravel/installer laravel/valet spatie/http-status-check
 
 # Install Laravel Valet
 $HOME/.composer/vendor/bin/valet install
 
-# Install global NPM packages
-npm install --global yarn
+# Install NVM
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+source $HOME/.nvm/nvm.sh
+nvm install node
 
-# Create a Sites directory
-# This is a default directory for macOS user accounts but doesn't comes pre-installed
-mkdir $HOME/Sites
+# Install global NPM packages
+npm install --global cordova csslint eslint gulp imageoptim-cli ionic ios-deploy ios-sim jshint livereload yarn
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
