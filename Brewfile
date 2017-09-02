@@ -22,7 +22,6 @@ brew 'bash'
 brew 'grep'
 
 # Install Binaries
-brew 'android-sdk'
 brew 'ffmpeg'
 brew 'gdal'
 brew 'git'
@@ -32,16 +31,19 @@ brew 'mas'
 brew 'node'
 brew 'trash'
 brew 'wget'
+brew 'yarn', args: ['without-node']
 brew 'youtube-dl'
 
 # Development
-brew 'php71', args: ['with-debug']
+brew 'php71'
 brew 'php71-intl'
 brew 'mariadb'
 brew 'mongodb'
 
 # Apps
 cask 'alfred'
+cask 'java'
+cask 'android-sdk'
 cask 'anki'
 cask 'carbon-copy-cloner'
 cask 'colorsnapper'
