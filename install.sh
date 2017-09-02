@@ -15,7 +15,12 @@ brew tap homebrew/bundle
 brew bundle
 
 # Make ZSH the default shell environment
-chsh -s $(which zsh)
+zsh_path=$(which zsh)
+grep -Fxq "$zsh_path" /etc/shells || sudo bash -c "echo $zsh_path >> /etc/shells"
+chsh -s "$zsh_path" $USER
+
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
@@ -28,12 +33,12 @@ mv composer.phar /usr/local/bin/composer
 $HOME/.composer/vendor/bin/valet install
 
 # Install Zsh NVM plugin
-git clone https://github.com/lukechilds/zsh-nvm $HOME/.oh-my-zsh/custom/plugins/zsh-nvm
-source $HOME/.oh-my-zsh/custom/plugins/zsh-nvm/zsh-nvm.plugin.zsh
+git clone https://github.com/lukechilds/zsh-nvm $HOME/.oh-my-zsh/plugins/zsh-nvm
+source $HOME/.oh-my-zsh/plugins/zsh-nvm/zsh-nvm.plugin.zsh
 nvm install node
 
-# Install global NPM packages
-npm install --global cordova csslint eslint gulp imageoptim-cli ionic ios-deploy ios-sim jshint livereload yarn
+# Install global npm packages with yarn
+yarn global add cordova csslint eslint gulp imageoptim-cli ionic ios-deploy ios-sim jshint livereload
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
