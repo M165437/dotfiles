@@ -36,9 +36,14 @@ $HOME/.composer/vendor/bin/valet install
 git clone https://github.com/lukechilds/zsh-nvm $HOME/.oh-my-zsh/plugins/zsh-nvm
 source $HOME/.oh-my-zsh/plugins/zsh-nvm/zsh-nvm.plugin.zsh
 nvm install node
+npm install -g npm
 
 # Install global npm packages with yarn
 yarn global add cordova csslint eslint gulp imageoptim-cli ionic ios-deploy ios-sim jshint livereload
+
+# Install ruby gem cocoapods
+gem install cocoapods
+pod setup
 
 # Set macOS preferences
 # We will run this last because this will reload the shell
