@@ -25,10 +25,11 @@ brew 'grep'
 brew 'ffmpeg'
 brew 'gdal'
 brew 'git'
+brew 'gradle'
 brew 'htop-osx'
+brew 'imagemagick'
 brew 'mackup'
 brew 'mas'
-brew 'node'
 brew 'trash'
 brew 'wget'
 brew 'yarn', args: ['without-node']
@@ -42,6 +43,7 @@ brew 'mongodb'
 
 # Apps
 cask 'alfred'
+cask 'android-file-transfer'
 cask 'java'
 cask 'android-sdk'
 cask 'anki'
@@ -55,7 +57,9 @@ cask 'gpgtools'
 cask 'imagealpha'
 cask 'imageoptim'
 cask 'iterm2'
+cask 'little-snitch'
 cask 'postman'
+cask 'sencha'
 cask 'sequel-pro'
 cask 'sketch'
 cask 'skype'
@@ -90,6 +94,7 @@ mas '1Password', id: 443987910
 mas 'DaisyDisk', id: 411643860
 mas 'GIPHY CAPTURE', id: 668208984
 mas 'Magnet', id: 441258766
+mas 'Pixelmator', id: 407963104
 mas 'SnippetsLab', id: 1006087419
 mas 'The Unarchiver', id: 425424353
 mas 'Things3', id: 904280696
